@@ -1,7 +1,4 @@
-Here's a sample README for a GitHub repository that focuses on a Java Spring Boot project for building an e-commerce website:
-
-```markdown
-# E-Commerce Website with Spring Boot
+# E-Commerce Website with Java Spring Boot
 
 This repository contains the code for a simple e-commerce website built using Java and the Spring Boot framework. The project demonstrates the use of Spring Boot with Spring MVC, Spring Data JPA, and Thymeleaf to create a fully functional web application.
 
@@ -13,21 +10,23 @@ This repository contains the code for a simple e-commerce website built using Ja
 - User authentication (login and registration)
 - RESTful services
 - Responsive design using Bootstrap
+- Writting RESTFUL API
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- Java JDK 11 or higher
-- Maven 3.6 or higher
-- MySQL Server 5.7 or higher
+
+- Java Development Kit (JDK) 11 or later (https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- Maven build tool (https://maven.apache.org/download.cgi)
+- A code editor or IDE of your choice (e.g., IntelliJ IDEA, Eclipse)
 
 ## Setup
 
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/ecommerce-spring-boot.git
-cd ecommerce-spring-boot
+git clone https://github.com/Newbies-Coder/hutech-java-ecommerce.git
+cd hutech-java-ecommerce
 ```
 
 ## Database Configuration
@@ -38,6 +37,14 @@ Create a MySQL database named `ecommerce` and update the `application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce?useSSL=false
 spring.datasource.username=root
 spring.datasource.password=yourpassword
+```
+
+## Install Dependencies
+
+Install dependencies:
+
+```bash
+mvn clean install
 ```
 
 ## Running the Application
@@ -70,19 +77,15 @@ To contribute to this project, please follow these steps:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
+## Contributors
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter)
+Farmers' MarketPlace API api is a training project and is developed by contributions from the following members:
 
-Project Link: <https://github.com/yourusername/ecommerce-spring-boot>
-
-## Acknowledgments
-
-- Spring Boot
-- Thymeleaf
-- Bootstrap
-- Maven
-- MySQL
-```
-
-This README template is structured to provide a clear overview of what the project is, how to set it up and run it, as well as how others can contribute. You can further customize this template to better fit the specifics of your project and personal branding.
+<table align="center">
+  <tbody>
+	<tr>
+		<td align="center"><a href="https://github.com/qoucname2202"><img src="https://avatars.githubusercontent.com/qoucname2202" width="100px;" alt="Dương Quốc Nam"/><br /><sub><b>Dương Quốc Nam</b></sub></a><br /><a href="#" title="Guide">📝</a></td>
+    <td align="center"><a href="https://github.com/sharrlotte"><img src="https://avatars.githubusercontent.com/sharrlotte" width="100px;" alt="Nguyễn Nhơn Hậu"/><br /><sub><b>Nguyễn Nhơn Hậu</b></sub></a><br /><a href="https://github.com/Newbies-Coder/farmer-marketplace-api" title="Code">💻</a></td>
+	</tr>
+  </tbody>
+</table>
