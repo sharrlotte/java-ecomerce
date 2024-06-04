@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}"
+>
 	<head>
 		<title>Hello</title>
 	</head>
-	<body>
+	<body layout:fragment="content">
 		<h1 th:text="${message}">XIN CHÀO HUTECH!</h1>
 	</body>
 </html>

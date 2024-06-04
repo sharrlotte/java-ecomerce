@@ -20,7 +20,7 @@
 				<p>
 					Tên:
 					<input
-						class="from-control"
+						class="form-control"
 						type="text"
 						th:field="*{name}"
 					/>
@@ -33,6 +33,7 @@
 				<p>
 					Tuổi:
 					<input
+						class="form-control"
 						type="text"
 						th:field="*{age}"
 					/>
@@ -45,6 +46,7 @@
 				<p>
 					Khoa:
 					<input
+						class="form-control"
 						type="text"
 						th:field="*{faculty}"
 					/>
@@ -54,7 +56,14 @@
 					th:errors="*{faculty}"
 					style="color: red"
 				></p>
-				<p><button type="submit">Submit</button></p>
+				<p>
+					<button
+						class="btn btn-primary"
+						type="submit"
+					>
+						Submit
+					</button>
+				</p>
 			</form>
 		</section>
 	</body>

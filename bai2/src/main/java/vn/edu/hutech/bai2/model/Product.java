@@ -1,32 +1,58 @@
 package vn.edu.hutech.bai2.model;
 
+import java.util.Set;
+
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import lombok.*;
 
-@RequiredArgsConstructor
 @Data
 @Entity
-@Table(name = "products")
+@Table(name = "Product")
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Min(1)
-    @Max(100)
-    private String name;
-
-    @Min(1)
-    @Max(10000)
-    private double price;
-
-    @Min(1)
-    @Max(1000)
-    private String description;
+    @Column(name = "ID_PRO")
+    private int id;
 
     @ManyToOne
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "ID_CAT", referencedColumnName = "ID_CAT")
     private Category category;
+
+    @Column(name = "NAME_PRO", nullable = false)
+    private String name;
+
+    @Column(name = "NUMS", nullable = false)
+    private int nums;
+
+    @Column(name = "PRICE", nullable = false)
+    private double price;
+
+    @Column(name = "DETAIL")
+    private String detail;
+
+    @Column(name = "IMG1")
+    private String img1;
+
+    @Column(name = "IMG2")
+    private String img2;
+
+    @Column(name = "IMG3")
+    private String img3;
+
+    @Column(name = "META")
+    private String meta;
+
+    @Column(name = "`ORDER`", nullable = false)
+    private int order;
+
+    @Column(name = "LINK")
+    private String link;
+
+    @Column(name = "HIDE", nullable = false)
+    private boolean hide;
+
+    @OneToMany(mappedBy = "product")
+    private Set<CartDetail> cartDetails;
+
 }
